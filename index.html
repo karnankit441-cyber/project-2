@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APEX — Elite Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">APEX</a>
+      <ul class="nav__links">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--nav">Start Now</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#programs" class="mobile-link">Programs</a></li>
+      <li><a href="#why" class="mobile-link">Why Us</a></li>
+      <li><a href="#trainers" class="mobile-link">Trainers</a></li>
+      <li><a href="#pricing" class="mobile-link">Pricing</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--lime mobile-link">Start Now</a>
+  </div>
+
+  <!-- ───── SECTION 1: HERO ───── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-text" aria-hidden="true">APEX</div>
+    <div class="hero__content">
+      <span class="label hero__label">Elite Performance Training</span>
+      <h1 class="hero__headline">
+        Train beyond<br />your limits.
+      </h1>
+      <p class="hero__sub">
+        Science-backed programming. World-class coaches.<br />
+        A community that refuses ordinary.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--lime">Join APEX</a>
+        <a href="#programs" class="btn btn--ghost">View Programs</a>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="stat">
+        <span class="stat__num" data-target="4800">0</span>
+        <span class="stat__label">Active Members</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-target="97">0</span><span class="stat__suffix">%</span>
+        <span class="stat__label">Retention Rate</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-target="12">0</span>
+        <span class="stat__label">Expert Coaches</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ───── SECTION 2: PROGRAMS ───── -->
+  <section class="programs" id="programs">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">What We Offer</span>
+        <h2 class="section-title">Programs built<br />for results.</h2>
+      </div>
+      <div class="programs__grid">
+
+        <div class="program-card" data-index="01">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="14" width="28" height="4" rx="2" fill="currentColor" opacity=".2"/><rect x="2" y="14" width="6" height="4" rx="2" fill="currentColor"/><rect x="24" y="14" width="6" height="4" rx="2" fill="currentColor"/><rect x="8" y="10" width="4" height="12" rx="2" fill="currentColor"/><rect x="20" y="10" width="4" height="12" rx="2" fill="currentColor"/></svg>
+          </div>
+          <h3 class="program-card__title">Strength & Power</h3>
+          <p class="program-card__body">Progressive overload methodology designed to build raw strength and explosive power over 12-week cycles.</p>
+          <span class="program-card__tag">12 Weeks</span>
+        </div>
+
+        <div class="program-card program-card--accent" data-index="02">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 8v8l5 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="program-card__title">HIIT & Conditioning</h3>
+          <p class="program-card__body">High-intensity intervals calibrated to your VO₂ max. Burn fat, build endurance, elevate performance.</p>
+          <span class="program-card__tag">Ongoing</span>
+        </div>
+
+        <div class="program-card" data-index="03">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 10 8 18a8 8 0 0016 0c0-8-8-14-8-14z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 22v4M13 26h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="program-card__title">Mobility & Recovery</h3>
+          <p class="program-card__body">Structured flexibility and fascial release work to keep you training harder, longer, with zero injury.</p>
+          <span class="program-card__tag">Daily Access</span>
+        </div>
+
+        <div class="program-card" data-index="04">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M4 28L16 4l12 24H4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M10 20h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="program-card__title">Elite 1-on-1</h3>
+          <p class="program-card__body">Private sessions with senior coaches. Fully personalised programming, nutrition advice, and weekly check-ins.</p>
+          <span class="program-card__tag">Custom</span>
+        </div>
+
+        <div class="program-card" data-index="05">
+          <div class="program-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M4 13h24" stroke="currentColor" stroke-width="2"/><circle cx="10" cy="20" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3 class="program-card__title">Nutrition Coaching</h3>
+          <p class="program-card__body">Macro-based meal planning and body-composition coaching integrated directly with your training plan.</p>
+          <span class="program-card__tag">8 Weeks</span>
+        </div>
+
+        <div class="program-card program-card--cta" data-index="06">
+          <p class="program-card__cta-text">Not sure where to start?</p>
+          <h3 class="program-card__title">Get a free<br />assessment.</h3>
+          <a href="#contact" class="btn btn--lime">Book Now →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SECTION 3: WHY US ───── -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why__inner">
+        <div class="why__left">
+          <span class="label">Why APEX</span>
+          <h2 class="section-title">No fluff.<br />Just results.</h2>
+          <p class="why__body">
+            We built APEX because generic gyms fail serious athletes. Every programme,
+            every coach, every tool here is selected for one thing — measurable performance improvement.
+          </p>
+          <a href="#trainers" class="btn btn--outline">Meet the Team</a>
+        </div>
+        <div class="why__right">
+          <div class="why__feature">
+            <div class="why__feature-num">01</div>
+            <div>
+              <h4 class="why__feature-title">Science-driven programming</h4>
+              <p class="why__feature-body">Every session is periodised using latest sports science research. No bro-science, no guesswork.</p>
+            </div>
+          </div>
+          <div class="why__feature">
+            <div class="why__feature-num">02</div>
+            <div>
+              <h4 class="why__feature-title">Data-tracked progress</h4>
+              <p class="why__feature-body">Biometric tracking, progress photos, and strength benchmarks logged every two weeks.</p>
+            </div>
+          </div>
+          <div class="why__feature">
+            <div class="why__feature-num">03</div>
+            <div>
+              <h4 class="why__feature-title">Small group sizes</h4>
+              <p class="why__feature-body">Max 8 per class. Your coach knows your name, your goals, and your limits.</p>
+            </div>
+          </div>
+          <div class="why__feature">
+            <div class="why__feature-num">04</div>
+            <div>
+              <h4 class="why__feature-title">Open 5am – 11pm</h4>
+              <p class="why__feature-body">Train when your schedule demands. Zero excuses, zero compromises.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SECTION 4: TRAINERS ───── -->
+  <section class="trainers" id="trainers">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">The Coaches</span>
+        <h2 class="section-title">World-class<br />humans, first.</h2>
+      </div>
+      <div class="trainers__grid">
+
+        <div class="trainer-card">
+          <div class="trainer-card__avatar trainer-card__avatar--1"><span>MR</span></div>
+          <div class="trainer-card__info">
+            <h3 class="trainer-card__name">Marcus Reid</h3>
+            <span class="label trainer-card__role">Head of Strength</span>
+            <p class="trainer-card__bio">Former Olympic weightlifting coach. 14 years transforming athletes from amateur to elite.</p>
+            <div class="trainer-card__creds"><span>CSCS</span><span>NSCA</span><span>FMS</span></div>
+          </div>
+        </div>
+
+        <div class="trainer-card trainer-card--featured">
+          <div class="trainer-card__avatar trainer-card__avatar--2"><span>SA</span></div>
+          <div class="trainer-card__info">
+            <h3 class="trainer-card__name">Sofia Alvarez</h3>
+            <span class="label trainer-card__role">Performance Director</span>
+            <p class="trainer-card__bio">Ex-professional triathlete. Specialises in endurance, VO₂ max optimisation, and mental performance.</p>
+            <div class="trainer-card__creds"><span>PhD Kinesiology</span><span>ACSM</span></div>
+          </div>
+        </div>
+
+        <div class="trainer-card">
+          <div class="trainer-card__avatar trainer-card__avatar--3"><span>JK</span></div>
+          <div class="trainer-card__info">
+            <h3 class="trainer-card__name">James Ko</h3>
+            <span class="label trainer-card__role">Mobility & Recovery</span>
+            <p class="trainer-card__bio">Certified physical therapist and movement specialist. Injury prevention is his obsession.</p>
+            <div class="trainer-card__creds"><span>DPT</span><span>FRC</span><span>PRI</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SECTION 5: PRICING ───── -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Membership</span>
+        <h2 class="section-title">Simple pricing.<br />Serious value.</h2>
+      </div>
+      <div class="pricing__grid">
+
+        <div class="pricing-card">
+          <span class="pricing-card__tier">Starter</span>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">79</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <p class="pricing-card__tagline">For those just beginning.</p>
+          <ul class="pricing-card__features">
+            <li>Full gym floor access</li>
+            <li>3 group classes/week</li>
+            <li>App + progress tracking</li>
+            <li>Locker room access</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline w-full open-modal" data-plan="Starter — $79/mo">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Most Popular</div>
+          <span class="pricing-card__tier">Pro</span>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">149</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <p class="pricing-card__tagline">For athletes who mean it.</p>
+          <ul class="pricing-card__features">
+            <li>Everything in Starter</li>
+            <li>Unlimited group classes</li>
+            <li>2 x monthly PT session</li>
+            <li>Nutrition consultation</li>
+            <li>Priority booking</li>
+          </ul>
+          <a href="#contact" class="btn btn--lime w-full open-modal" data-plan="Pro — $149/mo">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <span class="pricing-card__tier">Elite</span>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">299</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <p class="pricing-card__tagline">Total, uncompromising coaching.</p>
+          <ul class="pricing-card__features">
+            <li>Everything in Pro</li>
+            <li>Weekly 1-on-1 sessions</li>
+            <li>Custom macro meal plan</li>
+            <li>24/7 coach access</li>
+            <li>Biometric assessments</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline w-full open-modal" data-plan="Elite — $299/mo">Get Started</a>
+        </div>
+
+      </div>
+      <div class="pricing__guarantee">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l1.8 5.4H17l-4.5 3.3 1.7 5.3L10 13l-4.2 3 1.7-5.3L3 7.4h5.2L10 2z" fill="#C8F53C"/></svg>
+        <span>30-day money-back guarantee. No questions asked.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SECTION 6: CONTACT ───── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__left">
+          <span class="label">Get In Touch</span>
+          <h2 class="section-title">Ready to start<br />your journey?</h2>
+          <p class="contact__body">
+            Fill out the form and one of our coaches will reach out within 24 hours to schedule your free assessment session.
+          </p>
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 11a4 4 0 100-8 4 4 0 000 8zM3 18a7 7 0 0114 0" stroke="#C8F53C" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span>Open 5am – 11pm, 7 days a week</span>
+            </div>
+            <div class="contact__info-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" stroke="#C8F53C" stroke-width="1.5"/><path d="M2 5l8 6 8-6" stroke="#C8F53C" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span>hello@apextraining.com</span>
+            </div>
+            <div class="contact__info-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5a1 1 0 011-1h2.5a1 1 0 01.97.757l.5 2a1 1 0 01-.293.99l-1 .9a10.05 10.05 0 004.676 4.676l.9-1a1 1 0 01.99-.293l2 .5A1 1 0 0116 13.5V16a1 1 0 01-1 1C7.268 17 3 12.732 3 7.5V5z" stroke="#C8F53C" stroke-width="1.5"/></svg>
+              <span>+977 9702646470</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__right">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xlgyjezz" method="POST">
+            <input type="hidden" name="_subject" value="New APEX Membership Enquiry" />
+            <input type="hidden" name="plan" id="selectedPlan" value="General Enquiry" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name</label>
+                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Marcus" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name</label>
+                <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Reid" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+977 98XXXXXXXX" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="plan">Interested In</label>
+              <select class="form-input form-select" id="plan" name="interest">
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Starter — $79/mo">Starter — $79/mo</option>
+                <option value="Pro — $149/mo">Pro — $149/mo</option>
+                <option value="Elite — $299/mo">Elite — $299/mo</option>
+                <option value="Free Assessment">Free Assessment</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Tell us about your goals</label>
+              <textarea class="form-input form-textarea" id="message" name="message" placeholder="I want to build strength, lose fat, improve my endurance..." rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--lime w-full" id="submitBtn">
+              <span id="submitText">Send Message</span>
+              <svg id="submitSpinner" width="18" height="18" viewBox="0 0 18 18" fill="none" style="display:none;animation:spin 1s linear infinite"><path d="M9 2a7 7 0 100 14A7 7 0 009 2z" stroke="currentColor" stroke-width="2" opacity=".3"/><path d="M9 2a7 7 0 017 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+
+            <div class="form-success" id="formSuccess" style="display:none">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#C8F53C" stroke-width="1.5"/><path d="M7 12l4 4 6-6" stroke="#C8F53C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Message sent! We'll be in touch within 24 hours.</span>
+            </div>
+            <div class="form-error" id="formError" style="display:none">
+              <span>Something went wrong. Please try again or WhatsApp us directly.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">APEX</span>
+          <p class="footer__tagline">Elite training for serious athletes.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#programs">Programs</a>
+          <a href="#why">Why Us</a>
+          <a href="#trainers">Trainers</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 APEX Training. All rights reserved.</span>
+        <span>Privacy · Terms</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a class="whatsapp-btn" href="https://wa.me/9779702646470?text=Hi%20APEX%2C%20I%27m%20interested%20in%20joining!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <path d="M14 2C7.373 2 2 7.373 2 14c0 2.09.545 4.05 1.497 5.746L2 26l6.434-1.468A11.93 11.93 0 0014 26c6.627 0 12-5.373 12-12S20.627 2 14 2z" fill="white"/>
+      <path d="M19.707 16.594c-.306-.153-1.808-.892-2.088-.993-.28-.1-.483-.153-.687.153-.203.306-.788.993-.966 1.197-.178.204-.356.229-.661.076-.306-.153-1.293-.477-2.462-1.52-.91-.812-1.526-1.813-1.704-2.119-.178-.306-.019-.47.134-.622.137-.137.306-.356.458-.534.153-.178.204-.306.306-.51.102-.203.051-.382-.025-.535-.076-.152-.687-1.656-.941-2.268-.248-.596-.499-.515-.687-.524l-.585-.01c-.203 0-.534.076-.813.382-.28.306-1.068 1.044-1.068 2.547s1.094 2.956 1.246 3.159c.153.204 2.152 3.286 5.214 4.608.729.315 1.298.503 1.741.643.732.232 1.399.2 1.925.12.587-.087 1.808-.74 2.063-1.453.254-.714.254-1.325.178-1.453-.076-.127-.28-.204-.585-.356z" fill="#25D366"/>
+    </svg>
+    <span class="whatsapp-btn__label">Chat with us</span>
+  </a>
+
+  <!-- MODAL: Membership Sign-up -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal__close" id="modalClose" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <span class="label" style="margin-bottom:8px;display:block">Join APEX</span>
+      <h3 class="modal__title">You've chosen<br /><span id="modalPlanName" style="color:#C8F53C">Pro — $149/mo</span></h3>
+      <p class="modal__sub">Complete your details below and we'll confirm your membership within 24 hours.</p>
+      <form class="contact-form" id="modalForm" action="https://formspree.io/f/xlgyjezz" method="POST">
+        <input type="hidden" name="_subject" value="New APEX Membership Sign-up" />
+        <input type="hidden" name="plan" id="modalPlanInput" value="" />
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="mFirstName">First Name</label>
+            <input class="form-input" type="text" id="mFirstName" name="firstName" placeholder="Marcus" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mLastName">Last Name</label>
+            <input class="form-input" type="text" id="mLastName" name="lastName" placeholder="Reid" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mEmail">Email Address</label>
+          <input class="form-input" type="email" id="mEmail" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mPhone">Phone Number</label>
+          <input class="form-input" type="tel" id="mPhone" name="phone" placeholder="+977 98XXXXXXXX" required />
+        </div>
+        <button type="submit" class="btn btn--lime w-full" id="modalSubmitBtn">
+          <span id="modalSubmitText">Confirm Membership</span>
+          <svg id="modalSpinner" width="18" height="18" viewBox="0 0 18 18" fill="none" style="display:none;animation:spin 1s linear infinite"><path d="M9 2a7 7 0 100 14A7 7 0 009 2z" stroke="currentColor" stroke-width="2" opacity=".3"/><path d="M9 2a7 7 0 017 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="form-success" id="modalSuccess" style="display:none">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#C8F53C" stroke-width="1.5"/><path d="M7 12l4 4 6-6" stroke="#C8F53C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>You're in! We'll confirm your membership within 24 hours.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
